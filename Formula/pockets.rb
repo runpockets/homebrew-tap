@@ -4,7 +4,7 @@
 class Pockets < Formula
   desc "Local-first home for personal self-hosted web apps"
   homepage "https://github.com/runpockets/pockets"
-  version "0.2.2"
+  version "0.3.0"
   license "Apache-2.0"
 
   depends_on "podman"
@@ -12,22 +12,22 @@ class Pockets < Formula
   on_macos do
     on_arm do
       url "https://github.com/runpockets/pockets/releases/download/v#{version}/pockets-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "b3a01ee1cf6c906509115ddb12453a1ae49223e4d63ab2a2bd992b3b81094d5c"
+      sha256 "76dbdf9e09a9c47b6b9f786781ef723408dc913bbbdd9b779e7714b433f52281"
     end
     on_intel do
       url "https://github.com/runpockets/pockets/releases/download/v#{version}/pockets-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "c20fcd56b133516ba4543cb7791060bd0769b8729cd0626de822df745d8b83dd"
+      sha256 "ff0f30d80656fc47ad880cf1f3c1496461ee2054d09f7567644871fa7c470f62"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/runpockets/pockets/releases/download/v#{version}/pockets-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "cf94489d2fec93015eabfda7980168bb38c1a630327d0cdac3d17555a3968904"
+      sha256 "3b9b289a51ec61210d8cea5a6e045c04d15df9fd086802aeef364a218a617c37"
     end
     on_intel do
       url "https://github.com/runpockets/pockets/releases/download/v#{version}/pockets-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b16846483ea32aa4b94cc9949c8da3c7b147eecdaed869e545ed19574b573c5f"
+      sha256 "36d503b51321edabe3d02fbd4878dce4fb57686482efb3c81b876dea05369576"
     end
   end
 
