@@ -4,7 +4,7 @@
 class Pockets < Formula
   desc "Local-first home for personal self-hosted web apps"
   homepage "https://github.com/runpockets/pockets"
-  version "0.3.2"
+  version "0.3.3"
   license "Apache-2.0"
 
   depends_on "podman"
@@ -12,22 +12,22 @@ class Pockets < Formula
   on_macos do
     on_arm do
       url "https://github.com/runpockets/pockets/releases/download/v#{version}/pockets-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "a34e8938420042866b5082854e913fd6c182ce089410806a3ad7e295cbc267cd"
+      sha256 "cf0c0314d38d838095a57482b8e3c3b49da75d15270fb13af6580435dd9fc112"
     end
     on_intel do
       url "https://github.com/runpockets/pockets/releases/download/v#{version}/pockets-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "5e40b3e65253d6daf074da73d4c3ad5c8c1aa74e78b81b79af608ca1688b38f3"
+      sha256 "668c4c348bcf89d1ae452030fa4c3227768a770307b8a7f19dfbe33617e8d7c9"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/runpockets/pockets/releases/download/v#{version}/pockets-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3d8e738ae1b7c663a03f9440322192931e704e3ee428e44a5e4892911ef8e97c"
+      sha256 "0a2a313357afb215a3ecbbb97c7abf41162afb16f7aef5e9f0df7a857e9017eb"
     end
     on_intel do
       url "https://github.com/runpockets/pockets/releases/download/v#{version}/pockets-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f98805b86dcf3e3a1a6d7ab6f6952dd6f0db2141a258b34489e10b3358b355a3"
+      sha256 "d94231ef892ed47ad7819fd4875c0aec900ca4622086f66b85c4c1c809376f72"
     end
   end
 
@@ -51,6 +51,9 @@ class Pockets < Formula
 
       After opening once in your browser, bookmark http://pockets.localhost:18786/
       (or use Safari "Add to Dock" / Chrome "Install App").
+
+      To uninstall Pockets later (and optionally remove its data and Podman):
+        pockets uninstall
     EOS
   end
 
